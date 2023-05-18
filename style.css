@@ -97,7 +97,7 @@ header.sticky ul li a{
     overflow: hidden;
     flex-direction: row;
     align-items: stretch;
-    background-color: #cbcdd0;
+    background-color: #d2d4da;
     grid-column-start: span 3;
     grid-column-end: span 3;
     grid-row-start: span 2;
@@ -407,7 +407,8 @@ header.sticky ul li a{
     flex-direction: column;
     align-items: stretch;
     padding: 3rem;
-    background-color: #ff8089;
+    /* background-color: #ff8089; */
+    background-color: #E2BB5D;
     color: #f7f8f9;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -421,12 +422,43 @@ header.sticky ul li a{
     grid-column-start: span 2;
     grid-column-end: span 2;
     padding: 3rem;
-    background-color: #E2BB5D;
+    position: relative;
+    background-color: #7380ec;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+}
+.work-title-wrap-2{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    width: 64%;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.tu1ahorro-image{
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 410px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 #progress {
