@@ -42,9 +42,8 @@ header.sticky{
 }
 header .logo{
     position: relative;
-    font-weight: 700;
+    font-size: 2rem; font-weight: 700;
     color: #121517;
-    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all .5s ease;
@@ -64,9 +63,9 @@ header ul li{
 }
 header ul li a{
     position: relative;
+    font-weight: 500;
     margin: 0 15px;
     color: #121517;
-    font-weight: 500;
     transition: all .5 ease;
     -webkit-transition: all .5 ease;
     -moz-transition: all .5 ease;
@@ -179,12 +178,12 @@ header.sticky ul li a{
     align-self: flex-start;
 }
 .work-title-wrap h2{
-    font-size: 1.625rem;
+    font-size: 1.625rem; font-weight: 700;
     line-height: 2rem;
     margin-bottom: .75rem;
-    font-weight: 700;
 }
 .work-tag {
+    font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
     display: flex;
     height: 21px;
     margin-bottom: 8px;
@@ -195,10 +194,6 @@ header.sticky ul li a{
     border-radius: 2px;
     background-color: #121517;
     color: #edeef0;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 .tu1estilo-image{
     position: absolute;
@@ -337,19 +332,16 @@ header.sticky ul li a{
 }
 .button-external-site {
     z-index: 1000;
+    font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
     height: 32px;
     padding: 9px 15px;
     margin-top: 8px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsla(0,0%,100%,.3);
     transition: all .3s cubic-bezier(.39,.575,.565,1);
     color: #121517;
-    font-size: 12px;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -389,12 +381,12 @@ header.sticky ul li a{
 
 .skills-list li {
     cursor: default;
+    font-size: 1rem;
     display: inline-block;
     margin: 5px;
     padding: 10px 20px;
     background-color: #edeef0;
     color: #3c3e41;
-    font-size: 1rem;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -489,6 +481,46 @@ header.sticky ul li a{
     font-size: 1.25rem;
 }
 
+.section-top{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 10rem;
+    width: 100%;
+    max-width: 1600px;
+}
+.hero-about{
+    grid-gap: 25px;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    /* grid-gap: 3rem; */
+}
+.hero-column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+}
+.hero-column h1{
+    font-size: calc(40px + 4vw)!important;
+    line-height: 1.2;
+}
+.hero-column p{
+    width: 82%;
+}
+.hero-custom{
+    overflow: hidden;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.wrapper-list{
+    font-size: 2rem; font-weight: 600;
+    line-height: 1.20;
+    margin-bottom: 1rem;
+}
+
 /* MEDIA QUERIES  */
 @media screen and (max-width: 767px){
 
@@ -527,6 +559,7 @@ header.sticky ul li a{
     }
     header{
         flex-flow: row wrap;
+        padding: 1.25rem 3rem;
     }
     header ul{
         flex-direction: column;
@@ -565,18 +598,18 @@ header.sticky ul li a{
         height: 3.75rem;
         right: 2rem;
         transition-duration: 0.5s;
-      }
-      .btn15 .icon {
+    }
+    .btn15 .icon {
         transition-duration: 0.5s;
         position: absolute;
         height: 4px;
         width: 1.875rem;
-        top: 1.875rem;
+        top: 1.75rem;
         background-color: #121517;
         border-radius: 4px;
         left: 15px;
-      }
-      .btn15 .icon:before {
+    }
+    .btn15 .icon:before {
         transition-duration: 0.5s;
         position: absolute;
         width: 30px;
@@ -585,8 +618,8 @@ header.sticky ul li a{
         content: "";
         top: -10px;
         border-radius: 4px;
-      }
-      .btn15 .icon:after {
+    }
+    .btn15 .icon:after {
         transition-duration: 0.5s;
         position: absolute;
         width: 30px;
@@ -595,15 +628,26 @@ header.sticky ul li a{
         content: "";
         top: 10px;
         border-radius: 4px;
-      }
-      .btn15.activo .icon {
+    }
+    .btn15.activo .icon {
         transition-duration: 0.5s;
         background: transparent;
-      }
-      .btn15.activo .icon:before {
+    }
+    .btn15.activo .icon:before {
         transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
-      }
-      .btn15.activo .icon:after {
+    }
+    .btn15.activo .icon:after {
         transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
-      }
+    }
+    .section-top{
+        width: 90%;
+        padding-top: 5rem;
+    }
+    .hero-about{
+        grid-template-columns: 1fr;
+    }
+    .hero-column p{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
