@@ -319,6 +319,9 @@ header.sticky ul li a{
 .contact-social-icon:hover{
     color: #e97446;
 }
+.button-menu{
+    display: none;
+}
 .btn-primary{
     cursor: pointer;
     border: none;
@@ -460,7 +463,6 @@ header.sticky ul li a{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    border-radius: 4px;
 }
 
 #progress {
@@ -485,4 +487,124 @@ header.sticky ul li a{
     display: grid;
     place-items: center;
     font-size: 1.25rem;
+}
+
+/* MEDIA QUERIES  */
+@media screen and (max-width: 767px){
+
+    .page-grid {
+        width: 90%;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        grid-auto-columns: auto;
+        grid-auto-rows: minmax(300px,auto);
+        grid-row-gap: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .hero-card, .small-card, .tu1ahorro-card, .tu1estilo-card{
+        flex-direction: column;
+        grid-column-start: span 4;
+        grid-column-end: span 4;
+        grid-row-start: span 1;
+        grid-row-end: span 1;   
+    }
+    .hero-image{
+        width: 85%;
+    }
+    .work-title-wrap, .work-title-wrap-2{
+        width: 100%;
+    }
+    .article-content-wrapper{
+        padding-right: 0;
+    }
+    .slider-dot:hover{
+        background-color: white;
+    }
+    .button-menu{
+        display: block;
+        z-index: 501;
+    }
+    header{
+        flex-flow: row wrap;
+    }
+    header ul{
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+    header ul.activo{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    header ul li{
+        margin: 1rem 0;
+    }
+    .btn15 {
+        position: absolute;
+        width: 3.75rem;
+        height: 3.75rem;
+        top: 1rem;
+        right: 2rem;
+        transition-duration: 0.5s;
+      }
+      .btn15 .icon {
+        transition-duration: 0.5s;
+        position: absolute;
+        height: 4px;
+        width: 1.875rem;
+        top: 1.875rem;
+        background-color: #121517;
+        border-radius: 4px;
+        left: 15px;
+      }
+      .btn15 .icon:before {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #121517;
+        content: "";
+        top: -10px;
+        border-radius: 4px;
+      }
+      .btn15 .icon:after {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #121517;
+        content: "";
+        top: 10px;
+        border-radius: 4px;
+      }
+      .btn15.activo .icon {
+        transition-duration: 0.5s;
+        background: transparent;
+      }
+      .btn15.activo .icon:before {
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+      }
+      .btn15.activo .icon:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+      }
 }

@@ -3,6 +3,15 @@ window.addEventListener('scroll', function(){
     header.classList.toggle("sticky", window.scrollY > 0)
 })
 
+const buttonMenu = document.querySelector(".button-menu"),
+buttonIcon = document.querySelector(".btn15");
+const navMenu = document.querySelector("header ul");
+
+buttonMenu.addEventListener('click', ()=>{
+  navMenu.classList.toggle("activo");
+  buttonIcon.classList.toggle("activo");
+})
+
 // SLIDER HOME
 // const slides = document.querySelectorAll(".slide");
 // const sliderdots = document.querySelectorAll(".slider-dot");
@@ -73,7 +82,7 @@ let calcScrollValue = () => {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   let scrollValue = Math.round((pos * 100) / calcHeight);
-  if (pos > 100) {
+  if (pos > 500) {
     scrollProgress.style.display = "grid";
   } else {
     scrollProgress.style.display = "none";
