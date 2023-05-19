@@ -126,7 +126,6 @@ header.sticky ul li a{
 .hero-right{
     display: flex;
     height: 100%;
-    padding-left: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -521,6 +520,52 @@ header.sticky ul li a{
     margin-bottom: 1rem;
 }
 
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    height: 5px;
+    width: 4rem;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 3px 0.5em;
+    transition: background-color .1s, color .1s;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+  }
+  
+  .dot.active {
+    background-color: white;
+  }
+  
+
 /* MEDIA QUERIES  */
 @media screen and (max-width: 767px){
 
@@ -540,6 +585,9 @@ header.sticky ul li a{
         grid-column-end: span 4;
         grid-row-start: span 1;
         grid-row-end: span 1;   
+    }
+    .hero-right{
+        grid-column-start: span 4;
     }
     .hero-image{
         width: 85%;
@@ -591,6 +639,9 @@ header.sticky ul li a{
     }
     header ul li{
         margin: 1rem 0;
+    }
+    header ul li a{
+        font-size: 2rem;
     }
     .btn15 {
         position: absolute;

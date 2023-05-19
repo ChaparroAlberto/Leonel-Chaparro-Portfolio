@@ -95,3 +95,58 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const slides = document.querySelector(".slides");
+  const dotContainer = document.querySelector(".dots");
+  let currentSlide = 0;
+  let isPlaying = true;
+
+  function goToSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    currentSlide = index;
+    setActiveDot(currentSlide);
+  }
+
+  function nextSlide() {
+    if (currentSlide === slides.children.length - 1) {
+      slides.style.transition = "none";
+      goToSlide(0);
+      setTimeout(() => {
+        slides.style.transition = "";
+      }, 0);
+    } else {
+      goToSlide(currentSlide + 1);
+    }
+  }
+
+  function setActiveDot(index) {
+    const dots = Array.from(dotContainer.children);
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  dotContainer.addEventListener("click", function(event) {
+    if (event.target.classList.contains("dot")) {
+      const index = Array.from(dotContainer.children).indexOf(event.target);
+      goToSlide(index);
+    }
+  });
+
+  setInterval(() => {
+    if (isPlaying) {
+      nextSlide();
+    }
+  }, 4000);
+
+  slides.addEventListener("mouseover", () => {
+    isPlaying = false;
+  });
+
+  slides.addEventListener("mouseout", () => {
+    isPlaying = true;
+  });
+});
+
