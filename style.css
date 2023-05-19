@@ -701,4 +701,11 @@ header.sticky ul li a{
         width: 100%;
         margin-bottom: 1rem;
     }
+    .carousel{
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
 }
