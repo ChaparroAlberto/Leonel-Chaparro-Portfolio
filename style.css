@@ -304,7 +304,7 @@ header.sticky ul li a{
     -o-border-radius: 1rem;
 }
 .contact-block{
-    width: 12rem;
+    width: 15rem;
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
@@ -449,16 +449,18 @@ header.sticky ul li a{
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: auto;
-    right: auto;
-    top: auto;
-    width: 410px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+}
+.article-content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    padding-right: 39%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 4px;
 }
 
 #progress {
