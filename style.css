@@ -481,10 +481,12 @@ header.sticky ul li a{
 }
 
 .section-top{
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+    grid-row-start: span 2;
+    grid-row-end: span 2;
     position: relative;
     margin: 0 auto;
-    padding-top: 10rem;
-    width: 100%;
     max-width: 1600px;
 }
 .hero-about{
@@ -578,13 +580,16 @@ header.sticky ul li a{
         grid-column-start: span 4;
         grid-column-end: span 4;
         grid-row-start: span 1;
-        grid-row-end: span 1;   
+        grid-row-end: span 1;  
     }
     .tu1estilo-card{
         grid-column-start: span 4;
         grid-column-end: span 4;
         grid-row-start: span 2;
         grid-row-end: span 2;
+    }
+    .hero-content, .small-card, .tu1ahorro-card, .testimonial-card, .work-frame-wide{
+        padding: 2.75rem;
     }
     .hero-right{
         grid-column-start: span 4;
@@ -697,8 +702,10 @@ header.sticky ul li a{
         transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
     }
     .section-top{
-        width: 90%;
-        padding-top: 5rem;
+        grid-column-start: span 4;
+        grid-column-end: span 4;
+        grid-row-start: span 3;
+        grid-row-end: span 3;
     }
     .hero-about{
         grid-template-columns: 1fr;
