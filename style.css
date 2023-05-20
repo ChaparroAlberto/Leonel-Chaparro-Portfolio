@@ -350,6 +350,16 @@ header.sticky ul li a{
 .button-external-site:hover {
     background-color: white;
 }
+.arrow-external-site{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 .small-card{
     grid-row-start: span 1;
     grid-row-end: span 1;
@@ -503,6 +513,12 @@ header.sticky ul li a{
 }
 .hero-column-right{
     padding: 3rem;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 .hero-column-right h1{
     font-size: calc(40px + 4vw)!important;
