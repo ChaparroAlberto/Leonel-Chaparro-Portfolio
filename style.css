@@ -557,11 +557,11 @@ ul li:hover a span:nth-child(2){
 }
 .hero-custom{
     overflow: hidden;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 .wrapper-list{
     font-size: 2rem; font-weight: 700;
@@ -708,6 +708,7 @@ ul li:hover a span:nth-child(2){
     }
     header ul li a{
         font-size: 2rem;
+        height: 2.5rem;
     }
     .btn15 {
         position: absolute;
