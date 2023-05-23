@@ -556,7 +556,7 @@ ul li:hover a span:nth-child(2){
     -o-border-radius: 1rem;
 }
 .hero-column-right h1{
-    font-size: calc(40px + 4vw)!important;
+    font-size: calc(40px + 3vw)!important;
     line-height: 1.2;
 }
 .hero-column-right p{
@@ -916,6 +916,9 @@ ul li:hover a span:nth-child(2){
     }
     .lenguaje-button{
         margin-left: 1px;
+    }
+    .wrapper{
+        margin-top: 1rem;
     }
 }
 
