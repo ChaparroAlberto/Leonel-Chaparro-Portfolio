@@ -438,15 +438,22 @@ ul li:hover a span:nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 3rem;
     /* background-color: #ff8089; */
     background-color: #E2BB5D;
-    color: #f7f8f9;
+    color: #f7f8f9;  
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 .testimonial-card{
     grid-row-start: span 2;
@@ -615,7 +622,101 @@ ul li:hover a span:nth-child(2){
 .dot.active {
   background-color: white;
 }
-  
+
+.card{
+    padding: 35rem 0 0;
+    background-image: url(/images/Mockup\ Clima.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.card-content{
+    padding: 3rem;
+    background: linear-gradient(360deg, rgba(42, 42, 42, 0.65) 35%, rgba(255,255,255,0) 100%);
+    transform: translateY(58%);
+    -webkit-transform: translateY(58%);
+    -moz-transform: translateY(58%);
+    -ms-transform: translateY(58%);
+    -o-transform: translateY(58%);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition-delay: .2s;
+}
+.card-title{
+    position: relative;
+    width: max-content;
+    margin: 1.25rem 0;
+    font-size: 1.625rem;
+}
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + 3rem);
+    left: calc(3rem * -1);
+    bottom: 0;
+    background-color: #E2BB5D;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transform-origin: left;
+}
+.tu1ahorro-card:hover .card-title::after{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+.tu1ahorro-card:hover .card-content{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.card-body{
+    color: rgba(255, 255, 255, .95);
+    margin: 1rem 0;
+}
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #E2BB5D;
+    padding: .75rem 1.4rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.button:hover,
+.button:focus{
+    background-color: black;
+}
 
 /* MEDIA QUERIES  */
 @media screen and (max-width: 767px){
