@@ -440,7 +440,7 @@ ul li:hover a span:nth-child(2){
     align-items: stretch;
     /* background-color: #ff8089; */
     background-color: #E2BB5D;
-    color: #f7f8f9;  
+    color: white;  
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -700,6 +700,31 @@ ul li:hover a span:nth-child(2){
     color: rgba(255, 255, 255, .95);
     margin: 1rem 0;
 }
+.card-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.d-flex{
+    display: flex;
+}
+.lenguaje-button{
+    width: 2.875rem;
+    height: 2.875rem;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    color: #121517;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .button{
     cursor: pointer;
     display: inline-block;
@@ -744,9 +769,20 @@ ul li:hover a span:nth-child(2){
         grid-row-start: span 2;
         grid-row-end: span 2;
     }
-    .hero-content, .small-card, .tu1ahorro-card, .testimonial-card, .work-frame-wide{
+    .hero-content, .small-card, .testimonial-card, .work-frame-wide{
         padding: 2.75rem;
     }
+    .card{
+        padding: 18rem 0 0;
+    }
+    .card-content{
+        padding: 2.75rem;
+        transform: translateY(63%);
+        -webkit-transform: translateY(63%);
+        -moz-transform: translateY(63%);
+        -ms-transform: translateY(63%);
+        -o-transform: translateY(63%);
+}
     .hero-right{
         grid-column-start: span 4;
     }
@@ -877,6 +913,9 @@ ul li:hover a span:nth-child(2){
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
+    }
+    .lenguaje-button{
+        margin-left: 1px;
     }
 }
 
