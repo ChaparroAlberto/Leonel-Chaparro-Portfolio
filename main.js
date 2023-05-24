@@ -3,14 +3,23 @@ window.addEventListener('scroll', function(){
     header.classList.toggle("sticky", window.scrollY > 0)
 })
 
-const buttonMenu = document.querySelector(".button-menu"),
-buttonIcon = document.querySelector(".btn15");
+const buttonMenu = document.querySelector(".button-menu");
+const buttonIcon = document.querySelector(".btn15");
 const navMenu = document.querySelector("header ul");
 
-buttonMenu.addEventListener('click', ()=>{
+buttonMenu.addEventListener('click', () => {
   navMenu.classList.toggle("activo");
   buttonIcon.classList.toggle("activo");
-})
+});
+// quitar clase activo del navmenu al hacer click en cualquier <a> del menu
+const menuLinks = document.querySelectorAll("header ul li a");
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove("activo");
+    buttonIcon.classList.remove("activo");
+  });
+});
+
 
 // SLIDER HOME
 // const slides = document.querySelectorAll(".slide");
