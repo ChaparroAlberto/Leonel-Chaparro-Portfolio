@@ -359,9 +359,8 @@ ul li:hover a span:nth-child(2){
 }
 .button-external-site {
     z-index: 1000;
-    font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
-    height: 32px;
-    padding: 9px 15px;
+    font-size: 1rem; font-weight: 600; text-transform: uppercase;
+    padding: .75rem 1.4rem;
     margin-top: 8px;
     display: flex;
     justify-content: center;
@@ -376,7 +375,8 @@ ul li:hover a span:nth-child(2){
     -o-border-radius: 2rem;
 }
 .button-external-site:hover {
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 .arrow-external-site{
     width: 35px;
@@ -729,6 +729,9 @@ ul li:hover a span:nth-child(2){
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
     color: white;
     background-color: #E2BB5D;
     padding: .75rem 1.4rem;
@@ -741,6 +744,28 @@ ul li:hover a span:nth-child(2){
 .button:hover,
 .button:focus{
     background-color: black;
+}
+.floating-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: white;
+    color: #121517;
 }
 
 /* MEDIA QUERIES  */
