@@ -643,7 +643,7 @@ ul li:hover a span:nth-child(2){
 }
 .card-content{
     padding: 3rem;
-    background: linear-gradient(360deg, rgba(42, 42, 42, 0.65) 35%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(360deg, rgba(42, 42, 42, 0.6) 35%, rgba(255,255,255,0) 100%);
     transform: translateY(58%);
     -webkit-transform: translateY(58%);
     -moz-transform: translateY(58%);
