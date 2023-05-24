@@ -751,8 +751,8 @@ ul li:hover a span:nth-child(2){
     right: 1.5rem;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     border: none;
     font-size: 1.25rem;
