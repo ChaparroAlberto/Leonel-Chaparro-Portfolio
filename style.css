@@ -489,6 +489,7 @@ ul li:hover a span:nth-child(2){
 .work-title-wrap-2 h2{
     font-size: 1.625rem;
     margin-bottom: 0.5rem;
+    line-height: 2rem;
 }
 .work-title-wrap-2 p, .work-title-wrap p{
     margin-bottom: 8px;
@@ -500,7 +501,6 @@ ul li:hover a span:nth-child(2){
     max-width: 100%;
     object-fit: cover;
     height: auto;
-    margin-top: 1.5rem;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -659,8 +659,8 @@ ul li:hover a span:nth-child(2){
 }
 
 .card{
-    padding: 35rem 0 0;
-    background-image: url(/images/Mockup\ Clima.jpg);
+    padding: 32rem 0 0;
+    background-image: url(/images/Floating\ Ipad\ y\ Iphone.jpg);
     background-position: center;
     background-size: cover;
     transition: all 0.5s ease;
@@ -987,7 +987,10 @@ ul li:hover a span:nth-child(2){
         margin-top: 1rem;
     }
     .testimonial-card{
-        min-height: 37rem;
+        min-height: 38rem;
+    }
+    .card-body{
+        width: 100%;
     }
 }
 
