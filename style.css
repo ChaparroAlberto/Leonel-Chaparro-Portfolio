@@ -42,6 +42,7 @@ header.sticky{
 }
 header .logo{
     position: relative;
+    z-index: 501;
     font-size: 2rem; font-weight: 700;
     color: #121517;
     text-transform: uppercase;
@@ -887,6 +888,9 @@ ul li:hover a span:nth-child(2){
         left: 0;
         right: 0;
         bottom: 0;
+        padding: 3rem;
+        justify-content: flex-end;
+        align-items: flex-start;
         background-color: white;
         transform: translateY(-100%);
         -webkit-transform: translateY(-100%);
@@ -910,8 +914,9 @@ ul li:hover a span:nth-child(2){
         margin: 1rem 0;
     }
     header ul li a{
-        font-size: 2rem;
+        font-size: 2.125rem;
         height: 2.5rem;
+        margin: 0;
     }
     .btn15 {
         position: absolute;
