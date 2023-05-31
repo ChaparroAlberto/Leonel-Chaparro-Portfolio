@@ -1,25 +1,24 @@
-window.addEventListener('scroll', function(){
-    var header = document.querySelector('header');
-    header.classList.toggle("sticky", window.scrollY > 0)
-})
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 
 const buttonMenu = document.querySelector(".button-menu");
 const buttonIcon = document.querySelector(".btn15");
 const navMenu = document.querySelector("header ul");
 
-buttonMenu.addEventListener('click', () => {
+buttonMenu.addEventListener("click", () => {
   navMenu.classList.toggle("activo");
   buttonIcon.classList.toggle("activo");
 });
 // quitar clase activo del navmenu al hacer click en cualquier <a> del menu
 const menuLinks = document.querySelectorAll("header ul li a");
-menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
     navMenu.classList.remove("activo");
     buttonIcon.classList.remove("activo");
   });
 });
-
 
 // SLIDER HOME
 // const slides = document.querySelectorAll(".slide");
@@ -105,8 +104,7 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   const slides = document.querySelector(".slides");
   const dotContainer = document.querySelector(".dots");
   let currentSlide = 0;
@@ -137,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   }
 
-  dotContainer.addEventListener("click", function(event) {
+  dotContainer.addEventListener("click", function (event) {
     if (event.target.classList.contains("dot")) {
       const index = Array.from(dotContainer.children).indexOf(event.target);
       goToSlide(index);
@@ -158,4 +156,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
     isPlaying = true;
   });
 });
-
