@@ -149,8 +149,13 @@ ul li:hover a span:nth-child(2){
     display: flex;
     padding: 3.5rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     flex: 1;
+}
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 .hero-right{
     display: flex;
@@ -168,6 +173,16 @@ ul li:hover a span:nth-child(2){
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+}
+/* Skills */
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .875rem;
+}
+.skills-icon{
+    width: 3rem;
+    height: 3rem;
 }
 /* Works */
 .tu1estilo-card{
