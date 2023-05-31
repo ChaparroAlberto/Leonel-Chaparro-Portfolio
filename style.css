@@ -390,6 +390,7 @@ ul li:hover a span:nth-child(2){
     z-index: 1000;
     font-size: 1rem; font-weight: 600; text-transform: uppercase;
     padding: .75rem 1.4rem;
+    gap: .25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,6 +570,7 @@ ul li:hover a span:nth-child(2){
 .hero-column-right{
     padding: 3rem;
     background-color: white;
+    gap: .5rem;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -576,7 +578,7 @@ ul li:hover a span:nth-child(2){
     -o-border-radius: 1rem;
 }
 .hero-column-right h1{
-    font-size: calc(40px + 3vw)!important;
+    font-size: calc(40px + 4vw)!important;
     line-height: 1.2;
 }
 .hero-column-right p{
@@ -584,6 +586,8 @@ ul li:hover a span:nth-child(2){
 }
 .hero-custom{
     overflow: hidden;
+    max-height: 90vh;
+    height: 100%;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -596,6 +600,9 @@ ul li:hover a span:nth-child(2){
     margin-bottom: 1rem;
     margin-left: 2.75rem;
     list-style-type: "👉";
+}
+.wrapper-list:last-child{
+    margin-bottom: 0;
 }
 
 .carousel {
