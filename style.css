@@ -730,6 +730,37 @@ ul li:hover a span:nth-child(2) {
   color: #121517;
 }
 
+.navigation-marquee{
+  display: none;
+  font-size: 8rem;
+  text-transform: uppercase;
+  opacity: .2;
+  position: absolute;
+  top: 30%;
+  white-space: nowrap;
+  padding: 0 6rem;
+  letter-spacing: 1px;
+  animation: move-right 6s linear infinite;
+  -webkit-animation: move-right 6s linear infinite;
+}
+
+@keyframes move-right {
+  0%{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+
 /* MEDIA QUERIES  */
 @media screen and (max-width: 767px) {
   .page-grid {
@@ -905,5 +936,8 @@ ul li:hover a span:nth-child(2) {
   }
   .testimonial-card {
     min-height: 38rem;
+  }
+  .navigation-marquee{
+    display: block;
   }
 }
