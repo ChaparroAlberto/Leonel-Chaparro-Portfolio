@@ -381,19 +381,23 @@ ul li:hover a span:nth-child(2) {
   border: 2px solid #121517;
   background-color: #121517;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   border-radius: 2rem;
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
   -ms-border-radius: 32px;
   -o-border-radius: 32px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }
 .btn-primary:hover {
   background-color: transparent;
   border: 2px solid #121517;
   color: #121517;
-  font-weight: 600;
 }
 .button-external-site {
   z-index: 1000;
