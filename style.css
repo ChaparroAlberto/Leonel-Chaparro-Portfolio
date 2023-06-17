@@ -355,7 +355,7 @@ ul li:hover a span:nth-child(2) {
   text-decoration: underline;
 }
 .contact-block {
-  width: 15rem;
+  width: 17.5rem;
   display: flex;
   justify-content: space-between;
 }
