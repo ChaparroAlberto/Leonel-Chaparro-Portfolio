@@ -585,7 +585,6 @@ ul li:hover a span:nth-child(2) {
   padding: 3rem;
   background-color: white;
   gap: 0.5rem;
-  max-height: 90vh;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -601,7 +600,6 @@ ul li:hover a span:nth-child(2) {
 }
 .hero-custom {
   overflow: hidden;
-  max-height: 90vh;
   height: 100%;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -671,6 +669,7 @@ ul li:hover a span:nth-child(2) {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 .d-flex {
   display: flex;
@@ -773,7 +772,12 @@ ul li:hover a span:nth-child(2) {
     line-height: 1.2;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 769px) {
+  .hero-column, .hero-column-right{
+    max-height: 90vh;
+  }
+}
+@media screen and (max-width: 768px) {
   .page-grid {
     width: 90%;
     margin-top: 5rem;
